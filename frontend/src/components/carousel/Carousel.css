@@ -1,0 +1,151 @@
+.carouselContainer{
+    background: #0000008c;
+}
+.carousel-item{
+   
+    width: 100%;
+    height: 80vh;
+    
+}
+.carousel-item p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    
+    color: black;  
+}
+.banner-item{
+    margin: 0 50px 0px 50px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    width: 75%;
+    height: 80vh;
+    background-color: whitesmoke;
+    color: black;
+}
+.banner-item1 #img2{
+    width: 55%;
+    height: 90%;
+    margin-top: -180px;
+    margin-left: 400px;
+    
+}
+.banner-item1 #img1{
+    width: 140%;
+    height: 70%;
+    margin-top: -20px;
+    margin-left: -190px;
+}
+.banner-item1 .upperImg,.lowerImg p{
+    font-size: 70px;
+    color: rgb(190, 35, 35);
+
+}
+.lowerImg button{
+    margin: 0px 0 0 10px;
+    border: 0.5px solid rgb(15, 14, 14);
+    width: 170px;
+    height: 55px;
+    background: rgba(9, 5, 5, 0.885);
+    color: white;
+    font-size: 19px;
+    border-radius: 27px;
+}
+.lowerImg p{
+    margin: 0 290px 50px 0;
+}
+.lowerImg #text2{
+    display: flex;
+    align-items: center;
+    margin: 30px 0 0 -330px;
+    font-size: 18px;
+    color: rgb(128, 188, 37);
+}
+.upperImg p{
+    margin:  0 0 0 60px;
+    color: rgb(190, 35, 35);
+}
+.banner-item1{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+/* Center the inner banner-item content */
+.banner-item2 {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;   
+     
+  }
+  .banner-item2 #content2-text1{
+    margin-top: 50px;
+  }
+  .banner-item2 p{
+    font-size: 40px;
+  }
+ 
+  .content2 {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;      
+  }
+  
+
+  .imageItem {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    margin-top: 20px;         
+  }
+  
+  .content2 button {
+    background-color: #a02479;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 30px;
+    margin-bottom: 10px;  
+    font-size: 23px;    
+  }
+.banner-item3{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+}
+.banner-item3 img {
+    width: 85%;
+    height: 125%; /* Maintain aspect ratio */
+    margin-top: 10px;
+    margin-right: 600px;
+    box-shadow: 0px 8px 16px rgb(50, 0, 0); /* Adjust shadow parameters */
+}
+
+.content{
+    margin: 20px
+}
+.content p{
+    color: rgb(26, 167, 26);
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    
+}
+.content .title{
+    font-size: 70px;
+    color: black;
+}
+.content button{
+    border: 0.5px solid white;
+    width: 160px;
+    height: 55px;
+    background: rgb(240, 60, 60);
+    color: white;
+    font-size: 19px;
+  
+    border-radius: 27px;
+
+}
