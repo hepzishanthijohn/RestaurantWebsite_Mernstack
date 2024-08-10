@@ -13,7 +13,7 @@ export default function Header() {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/users/profile`, {
+        const response = await axios.get(`https://restaurantwebsite-mernstack.onrender.com/users/profile`, {
           withCredentials: true // Include credentials (cookies) with the request
         });
         setUserInfo(response.data);

@@ -23,7 +23,7 @@ export default function RegisterPage() {
   // Handle form submission
   const handleSubmit = async (values, { setSubmitting, setErrors }) => {
     try {
-      const response = await axios.post('http://localhost:3000/users/register', values, {
+      const response = await axios.post('https://restaurantwebsite-mernstack.onrender.com/users/register', values, {
         headers: { 'Content-Type': 'application/json' }
       });
 
