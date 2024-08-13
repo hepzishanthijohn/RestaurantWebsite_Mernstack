@@ -1,5 +1,6 @@
 .carouselContainer{
     background: #0000008c;
+    
 }
 .carousel-item{
    
@@ -15,7 +16,7 @@
     color: black;  
 }
 .banner-item{
-    margin: 0 50px 0px 50px;
+    margin: 50px 50px 0px 50px;
     margin-left: 200px;
     display: flex;
     justify-content: center;
@@ -25,53 +26,93 @@
     background-color: whitesmoke;
     color: black;
 }
-.banner-item1 #img2{
-    width: 55%;
-    height: 90%;
-    margin-top: -180px;
-    margin-left: 400px;
-    
-}
-.banner-item1 #img1{
-    width: 140%;
-    height: 70%;
-    margin-top: -20px;
-    margin-left: -190px;
-}
-.banner-item1 .upperImg,.lowerImg p{
-    font-size: 70px;
-    color: rgb(190, 35, 35);
-
-}
-.lowerImg button{
-    margin: 0px 0 0 10px;
-    border: 0.5px solid rgb(15, 14, 14);
-    width: 170px;
-    height: 55px;
-    background: rgba(9, 5, 5, 0.885);
-    color: white;
-    font-size: 19px;
-    border-radius: 27px;
-}
-.lowerImg p{
-    margin: 0 290px 50px 0;
-}
-.lowerImg #text2{
+.banner-item1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin: 30px 0 0 -330px;
-    font-size: 18px;
-    color: rgb(128, 188, 37);
-}
-.upperImg p{
-    margin:  0 0 0 60px;
-    color: rgb(190, 35, 35);
-}
-.banner-item1{
-    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    background-color: #f8f8f8; /* Light background color */
+    overflow: hidden; /* Ensures child elements don't overflow */
+  }
+  
+  .upperImg {
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: center;
+    margin-bottom: 20px; /* Spacing between the images and text */
+  }
+  
+  .upperImg img {
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    border-radius: 10px; 
+  }
+  
+  .textContent {
+    margin-bottom: 20px; 
+  }
+  
+  .textContent p {
+    color: #d11a27;
+    margin: 10px 0;
+    font-size: 3.2rem; 
+  }
+  
+  .textContent p#text2 {
+    font-size: 1rem;
+    color: #666; /* Slightly lighter color for secondary text */
+  }
+  
+  .textContent button {
+    background-color: #0b0402; /* Tomato color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .textContent button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+  }
+  
+  .lowerImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lowerImg img {
+    width: 100%;
+    max-width: 600px; /* Adjust max width as needed */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .textContent p {
+      font-size: 1rem;
+    }
+  
+    .textContent p#text2 {
+      font-size: 0.9rem;
+    }
+  
+    .textContent button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .upperImg img, .lowerImg img {
+      max-width: 100%;
+    }
+  }
+  
 /* Center the inner banner-item content */
 .banner-item2 {
     display: flex;
@@ -149,3 +190,251 @@
     border-radius: 27px;
 
 }
+
+@media(max-width:800px){
+    
+    .banner-item{
+        margin-left: 40px;
+        width: 90%;
+        height: 70vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 70vh;  
+    }
+    
+    .banner-item1{
+        margin-top: -120px;
+    }
+    .banner-item1 .upperImg #img1{
+        width:100%;
+        height: 30vh;
+        margin-top: -10px;
+        margin-left: -50px;
+        
+    }
+    .banner-item1 p{
+        font-size: 24px;
+    }
+    .textContent p#text2{
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    
+    .banner-item1 button{
+        margin-top: 0px;
+        width: 130px;
+        height: 35px;
+        font-size: 15px;
+  
+    }
+     
+    .banner-item2 .imageItem img{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .banner-item2 .content2{
+        margin-top: -120px;
+    }
+    .banner-item2 p{
+        font-size: 18px;
+        margin-bottom: -15px;
+        margin-top: 10px;
+    }
+    .banner-item2 button{
+        margin-top: 10px;
+        width: 25%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .banner-item3 img{
+        width: 83%;
+        height: 58vh;
+    }
+    .content .title{
+        font-size: 29px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content button{
+        width: 140px;
+        height: 45px;  
+    }
+}
+@media(max-width:500px){
+    .carouselContainer{
+        height: 60vh;
+        margin-left: -30px;
+    }
+    .banner-item{
+        margin-left: 20px;
+        width: 90%;
+        height: 40vh;
+    }
+    .carousel-item{
+        width: 90%;
+        height: 70vh;  
+    }
+    .banner-item1{
+        margin-top: -180px;
+    }
+    .banner-item1 .upperImg #img1{
+        width:90%;
+        height: 19vh;
+        margin-top: -10px;
+        margin-left: -50px;
+        
+    }
+    .banner-item1 p{
+        font-size: 16px;
+    }
+    .textContent #text2{
+        margin-left: 0px;
+        font-size: 13px;
+    }
+    
+    .banner-item1 button{
+        margin-top: 0px;
+        width: 130px;
+        height: 35px;
+        font-size: 15px;
+  
+    }
+    
+
+
+    .banner-item2 .imageItem img{
+        width: 50%;
+        margin-bottom: 0px;
+    }
+    .banner-item2{
+        margin-top: -190px;
+    }
+    .banner-item2 .content2{
+        margin-top: 0px;
+    }
+    .banner-item2 p{
+        font-size: 15px;
+        
+    }
+    .banner-item2 button{
+       width: 150px;
+       height: 40px;
+       font-size: 15px;
+    }
+    .banner-item3 img{
+        width: 30%;
+        height: 38vh;
+    }
+    .content .title{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .content p{
+        font-size: 12px;
+       
+    }
+    .content button{
+        width: 140px;
+        height: 30px; 
+        margin-bottom: -30px; 
+    }
+}
+
+@media(max-width:1200px){
+    .banner-item{
+        margin-left: 60px;
+        width: 90%;
+        height: 80vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 80vh;  
+    }
+
+}
+
+@media(max-width:900px){
+    .banner-item{
+        margin-left: 40px;
+        width: 90%;
+        height: 80vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 80vh;  
+    }
+
+}
+
+@media(max-width:1285px){
+    .banner-item{
+        margin-left: 60px;
+        width: 90%;
+        height: 80vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 80vh;  
+    }
+
+}
+@media(min-width:1285px){
+    .banner-item{
+        margin-left: 60px;
+        width: 90%;
+        height: 80vh;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 80vh;  
+    }
+
+}
+@media(max-width:700px){
+    .banner-item{
+        margin-left: 40px;
+        width: 90%;
+        height: 80vh;
+      
+    }
+    .carousel-item{
+        width: 100%;
+        height: 66vh;
+    }
+   .content .title{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .content p{
+        font-size: 12px;
+       
+    }
+
+}
+
+@media(max-width:1000px){
+    .banner-item3{
+        margin-left: 0px;
+        width: 90%;
+      
+    }
+    .banner-item3 img{
+        width: 90%;
+        height: 68vh;
+    }
+    .content .title{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .content p{
+        font-size: 20px;
+    }
+    .content button{
+        width: 180px;
+        height: 55px;  
+    }
+
+}
+

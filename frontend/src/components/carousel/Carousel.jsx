@@ -18,14 +18,13 @@ const Carousel = () => {
         <div className="banner-item1">
             <div className="upperImg">
             <img src={burgerImg} alt="" id='img1'/>
-            <p> </p>
             </div>
-            <div className="lowerImg">
-              <p>Taste Flavours from <br />Around the world</p>
+            <div className="textContent">
+            <p>Taste Flavours from <br />Around the world</p>
               <button>Explore Menu</button>
               <p id='text2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Rerum quisquam at odit aut eligendi architecto sint doloremque quas, <br /> perferendis animi?</p>
-            <img src={foodImg} alt="about" id="img2"/>
             </div>
+           
         </div>
        </div>
         </div>
@@ -54,11 +53,11 @@ const Carousel = () => {
             <img src={foodimg3} alt="about" />
         </div>
        <div className="content">
-       <p className='title'>It's not just Food, It's an Experiance</p>
-        <button>Explore</button>
-        <p>
+           <p className='title'>It's not just Food, It's an Experiance</p>
+            <button>Explore</button>
+            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nobis debitis amet aut! Doloremque accusamus voluptatem dignissimos nam minima tempora expedita sit.
-        </p>
+            </p>
        </div>
         </div>
           {/* <img src={img3} className="d-block w-75" alt="Third slide" style={{height:"80vh"}}/> */}

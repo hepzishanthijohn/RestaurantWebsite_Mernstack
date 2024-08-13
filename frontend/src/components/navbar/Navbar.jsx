@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to='/'>About us</Link>
             <Link>Services</Link>
             <Link >Team</Link>
-            <Link to='/reservation'>Reservation</Link>
+            
           </div>
           <Link to='/mainpage'><button className="menuBtn">OUR MENU</button></Link>
         </div>
