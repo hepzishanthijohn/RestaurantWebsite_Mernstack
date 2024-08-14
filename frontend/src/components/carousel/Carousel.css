@@ -16,7 +16,7 @@
     color: black;  
 }
 .banner-item{
-    margin: 50px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     margin-left: 200px;
     display: flex;
     justify-content: center;
@@ -156,12 +156,15 @@
     color: black;
     font-size: 18px;
     font-weight: 100;
+    display: flex;
+    flex-direction: row;
 }
 .banner-item3 img {
-    width: 85%;
-    height: 125%; /* Maintain aspect ratio */
-    margin-top: 10px;
-    margin-right: 600px;
+    width: 100%;
+    height: 100%; /* Maintain aspect ratio */
+    margin-top: 20px;
+    margin-right: 200px;
+    margin-left: 50px;
     box-shadow: 0px 8px 16px rgb(50, 0, 0); /* Adjust shadow parameters */
 }
 
@@ -192,15 +195,17 @@
 }
 
 @media(max-width:800px){
-    
+    .carouselContainer{
+        height: 59vh;
+    }
     .banner-item{
         margin-left: 40px;
         width: 90%;
-        height: 70vh;
+        height: 50vh;
     }
     .carousel-item{
         width: 100%;
-        height: 70vh;  
+        height: 50vh;  
     }
     
     .banner-item1{
@@ -248,11 +253,15 @@
         font-size: 15px;
     }
     .banner-item3 img{
-        width: 83%;
-        height: 58vh;
+        width: 103%;
+        height: 51vh;
+      
     }
-    .content .title{
-        font-size: 29px;
+    .banner-item3 .content{
+        margin-left: -150px;
+    }
+    .banner-item .banner-item3 .content .title{
+        font-size: 24px;
     }
     .content p{
         font-size: 16px;
@@ -264,28 +273,19 @@
 }
 @media(max-width:500px){
     .carouselContainer{
-        height: 60vh;
-        margin-left: -30px;
-    }
-    .banner-item{
-        margin-left: 20px;
-        width: 90%;
-        height: 40vh;
+        height: 48vh;
     }
     .carousel-item{
-        width: 90%;
-        height: 70vh;  
+      margin-right: -30px; 
+
     }
+
+    
+    
     .banner-item1{
         margin-top: -180px;
     }
-    .banner-item1 .upperImg #img1{
-        width:90%;
-        height: 19vh;
-        margin-top: -10px;
-        margin-left: -50px;
-        
-    }
+    
     .banner-item1 p{
         font-size: 16px;
     }
@@ -323,24 +323,60 @@
        height: 40px;
        font-size: 15px;
     }
-    .banner-item3 img{
-        width: 30%;
-        height: 38vh;
+    .banner-item .banner-item3 img{
+        width: 130%;
+        height: 48vh;
+        
     }
-    .content .title{
-        font-size: 16px;
-        margin-bottom: 10px;
+    .banner-item .banner-item3 .content p.title{
+        font-size: 18px;
+       
     }
-    .content p{
+    .banner-item .banner-item3 .content p{
         font-size: 12px;
        
     }
-    .content button{
-        width: 140px;
-        height: 30px; 
-        margin-bottom: -30px; 
+    .banner-item .content button{
+        width: 120px;
+        height: 40px; 
+        font-size: 15px;
+        margin-left: 0px;
     }
 }
+@media(max-width:980px){
+    .banner-item3 img{
+        width: 140%;
+        height: 70vh;
+    }
+    .banner-item3 .content{
+        margin-left: -150px;
+       
+    }
+    .content .title{
+        font-size: 40px;
+        color: black;
+    }
+
+}
+
+@media(max-width:1170px){
+    
+    .banner-item3 .content{
+        margin-left: -150px;
+       
+    }
+    .content .title{
+        font-size: 60px;
+        color: black;
+    }
+
+}
+@media(max-width:640px){
+    .carousel-item{
+        margin-left: -5px;
+    }
+}
+
 
 @media(max-width:1200px){
     .banner-item{
@@ -359,11 +395,11 @@
     .banner-item{
         margin-left: 40px;
         width: 90%;
-        height: 80vh;
+        height: 60vh;
     }
     .carousel-item{
         width: 100%;
-        height: 80vh;  
+        height: 60vh;  
     }
 
 }
@@ -392,17 +428,14 @@
     }
 
 }
-@media(max-width:700px){
-    .banner-item{
-        margin-left: 40px;
-        width: 90%;
-        height: 80vh;
-      
+
+
+@media(max-width:990px){
+
+    .carouselContainer{
+        margin-left: -40px;
     }
-    .carousel-item{
-        width: 100%;
-        height: 66vh;
-    }
+    
    .content .title{
         font-size: 17px;
         margin-bottom: 10px;
@@ -411,29 +444,16 @@
         font-size: 12px;
        
     }
-
-}
-
-@media(max-width:1000px){
-    .banner-item3{
-        margin-left: 0px;
-        width: 90%;
-      
-    }
-    .banner-item3 img{
-        width: 90%;
-        height: 68vh;
+    .banner-item3 .content{
+        margin-left: -150px;
+       
     }
     .content .title{
-        font-size: 38px;
-        margin-bottom: 20px;
+        font-size: 50px;
+        
     }
     .content p{
-        font-size: 20px;
-    }
-    .content button{
-        width: 180px;
-        height: 55px;  
+        font-size: 17px;
     }
 
 }

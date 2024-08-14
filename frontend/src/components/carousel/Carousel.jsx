@@ -51,13 +51,14 @@ const Carousel = () => {
         
         <div className="banner-item3">
             <img src={foodimg3} alt="about" />
-        </div>
+        
        <div className="content">
            <p className='title'>It's not just Food, It's an Experiance</p>
             <button>Explore</button>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nobis debitis amet aut! Doloremque accusamus voluptatem dignissimos nam minima tempora expedita sit.
             </p>
+       </div>
        </div>
         </div>
           {/* <img src={img3} className="d-block w-75" alt="Third slide" style={{height:"80vh"}}/> */}

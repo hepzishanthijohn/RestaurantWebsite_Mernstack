@@ -130,6 +130,13 @@ header{
 .nav__toggle-btn{
   display: none;
 }
-
+@media(max-width:500px){
+  .nav__logo h1{
+    font-size: 22px;
+  }
+  li{
+    font-size: 15px;
+  }
+}
 
 /*=========================================Footer================== */
