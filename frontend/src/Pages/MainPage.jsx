@@ -8,8 +8,9 @@ import Header from './header/Header'
 const MainPage = () => {
   return (
     <>
-    <Header/>
+   
     <Carousel/>
+    <hr />
     <Menu/>
   
     <Footer/>

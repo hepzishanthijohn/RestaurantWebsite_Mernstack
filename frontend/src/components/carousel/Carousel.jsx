@@ -4,12 +4,15 @@ import './Carousel.css';
 import foodImg from '../../assets/foodImages/about.png'
 import foodimg3 from '../../assets/foodImages/whoweare.png'
 import burgerImg from '../../assets/foodImages/burger4.png'
-import dessertImg from '../../assets/foodImages/glassSweetbg.png'
+import dessertImg from '../../assets/foodImages/glassSweetbg.png';
+
+import Header from '../../Pages/header/Header';
 
 
 const Carousel = () => {
   return (
     <div className="carouselContainer">
+      <Header/>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
         <div className="carousel-item active">  

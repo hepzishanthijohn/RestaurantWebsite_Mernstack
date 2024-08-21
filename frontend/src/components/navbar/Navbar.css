@@ -129,6 +129,7 @@ nav {
   @media (max-width: 800px) {
     nav .showmenu {
       width: 96vw;
+      z-index: 999;
     }
   }
   @media (max-width: 650px) {
